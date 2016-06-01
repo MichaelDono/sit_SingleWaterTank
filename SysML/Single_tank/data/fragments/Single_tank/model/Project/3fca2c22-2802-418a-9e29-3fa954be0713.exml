@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Single_tank" version="4">
+  <OBJECT>
+    <ID name="Single_tank" mc="Standard.Project" uid="3fca2c22-2802-418a-9e29-3fa954be0713"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Single_tank]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Single_tank" mc="Standard.DiagramSet" uid="0fb16a28-b4d4-4a9c-9d20-91437e46bbfb"/>
+      </COMP>
+      <COMP relation="Model">
+        <COMPID name="single_tank" mc="Standard.Package" uid="4078ad1c-4434-480b-ac67-d6a8f80cf002"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

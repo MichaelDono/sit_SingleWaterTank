@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Controller" version="4">
+  <OBJECT>
+    <ID name="Controller" mc="Standard.Class" uid="1129e49e-1cca-4229-9076-99760e0e6e34"/>
+    <PID name="single_tank" mc="Standard.Package" uid="4078ad1c-4434-480b-ac67-d6a8f80cf002"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Controller]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="maxlevel" mc="Standard.Attribute" uid="e639ae17-92dd-4d02-b971-0482a96fbb6b"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[maxlevel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Parameter" mc="Standard.Stereotype" uid="cb4ad4d7-d537-4f97-a935-7cba81d3dbed"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Standard.TaggedValue" uid="a992692a-3351-4d9e-b5eb-49389abe38c0"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TagParameter" uid="65ad8c15-5b57-40f8-982b-56bbd2e67a97"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[parameter]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="Variable_variableKind" mc="Standard.TagType" uid="f33eaffb-c38f-4bbf-8c3a-66f30766b707"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="22b64cd1-d851-46e5-bef9-ebe70b5ecf33"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="minlevel" mc="Standard.Attribute" uid="270dd3d3-e14a-4642-93ee-798380df50d6"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">ReadWrite</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[minlevel]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Parameter" mc="Standard.Stereotype" uid="cb4ad4d7-d537-4f97-a935-7cba81d3dbed"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Standard.TaggedValue" uid="dc188954-5dfb-4c07-b709-c81517949930"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Standard.TagParameter" uid="55906b20-82c1-4696-91d0-6e0b41e0813d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[parameter]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="Variable_variableKind" mc="Standard.TagType" uid="f33eaffb-c38f-4bbf-8c3a-66f30766b707"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Standard.Note" uid="a7fce6a5-4829-41af-b641-7a0127ccea4f"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"></ATT>
+                  <ATT name="MimeType"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="valve" mc="Standard.Port" uid="740e0adc-1113-4dd7-aeeb-91d56edb3c70"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">Out</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[valve]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="FlowPort" mc="Standard.Stereotype" uid="197dab5e-85eb-4fef-8313-f113b85ca2b4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="level" mc="Standard.Port" uid="7eda45d2-16b7-440e-8add-09a21d92b64d"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">In</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[level]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="FlowPort" mc="Standard.Stereotype" uid="197dab5e-85eb-4fef-8313-f113b85ca2b4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EComponent" mc="Standard.Stereotype" uid="b988949d-fefe-4623-b48e-8161edb603f7"/>
+        <FOREIGNID name="Cyber" mc="Standard.Stereotype" uid="1c2bc602-60a9-401c-923b-0c12269afd17"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="0d16b0ce-b4a8-4601-9041-44c33958cd1a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="f14be4d3-d742-4b7d-a6cf-4fe23dab5e4e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Cyber]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Component_kind" mc="Standard.TagType" uid="4d3dea1a-7494-48e4-a74a-c13e045bfe84"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="196651b2-5bb8-4386-a1ba-edddf8c59630"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="68dcc358-432c-4e57-99fb-103f13724f4e"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Discrete]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="EComponent_modelTy" mc="Standard.TagType" uid="b6d8966b-58ec-45ee-b8e2-cf0a9e21470c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="ee9e1fd2-b101-4775-9f8b-074150a3932b"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="5dc73840-ab09-43aa-8344-48f1d7852fdb"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[VDMRT]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="EComponent_platform" mc="Standard.TagType" uid="6d54dcce-4c9d-4c9d-8189-43e75e7ccf31"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Single_tank" version="4">
+  <OBJECT>
+    <ID name="Single_tank" mc="Standard.AnalystProject" uid="ed8dac52-bd8f-4e5a-aac1-a2b086a7e6b3"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Single_tank]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="PropertyRoot">
+        <COMPID name="Single_tank" mc="Standard.PropertyContainer" uid="d52f7b89-4676-4180-a3f7-3d5958934335"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

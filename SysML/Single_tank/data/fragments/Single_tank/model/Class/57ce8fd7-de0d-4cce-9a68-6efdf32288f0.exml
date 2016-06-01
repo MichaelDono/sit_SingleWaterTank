@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="WaterTank" version="4">
+  <OBJECT>
+    <ID name="WaterTank" mc="Standard.Class" uid="57ce8fd7-de0d-4cce-9a68-6efdf32288f0"/>
+    <PID name="single_tank" mc="Standard.Package" uid="4078ad1c-4434-480b-ac67-d6a8f80cf002"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[WaterTank]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="InternalStructure">
+        <OBJECT>
+          <ID name="level" mc="Standard.Port" uid="34996d8c-e586-4f9f-8ba7-ca8214368de2"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">Out</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[level]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="FlowPort" mc="Standard.Stereotype" uid="197dab5e-85eb-4fef-8313-f113b85ca2b4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="valvecontrol" mc="Standard.Port" uid="dc444a36-90d7-4b89-8467-ffe32ad0c978"/>
+          <ATTRIBUTES>
+            <ATT name="IsBehavior">false</ATT>
+            <ATT name="IsService">true</ATT>
+            <ATT name="IsConjugated">false</ATT>
+            <ATT name="Direction">In</ATT>
+            <ATT name="IsConstant">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Value"></ATT>
+            <ATT name="Name"><![CDATA[valvecontrol]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Base">
+              <FOREIGNID name="Real" mc="Standard.DataType" uid="cf54ada1-c5bf-4eaf-9ef5-a2fc8c7edcad"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="FlowPort" mc="Standard.Stereotype" uid="197dab5e-85eb-4fef-8313-f113b85ca2b4"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EComponent" mc="Standard.Stereotype" uid="b988949d-fefe-4623-b48e-8161edb603f7"/>
+        <FOREIGNID name="Physical" mc="Standard.Stereotype" uid="c590a3bb-0ca5-4d18-af5c-cade72a3f371"/>
+      </LINK>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="5aec0b29-816a-4f4b-8418-85a22302dbb9"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="fc04c224-9d80-4d72-91e5-1ad8e7994083"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Physical]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="Component_kind" mc="Standard.TagType" uid="4d3dea1a-7494-48e4-a74a-c13e045bfe84"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="bf9dc5b1-f4d9-417d-aee9-0216a24c7758"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="40c8bd26-fd69-404c-af2f-13c645e609ce"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[Continuous]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="EComponent_modelTy" mc="Standard.TagType" uid="b6d8966b-58ec-45ee-b8e2-cf0a9e21470c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.TaggedValue" uid="c2bcf662-df07-479a-9110-b05070bab2ee"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Standard.TagParameter" uid="52320fb3-4b81-4217-8234-7b6212fec3c1"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[TwentySim]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="EComponent_platform" mc="Standard.TagType" uid="6d54dcce-4c9d-4c9d-8189-43e75e7ccf31"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Single_tank" version="4">
+  <OBJECT>
+    <ID name="Single_tank" mc="Standard.DiagramSet" uid="0fb16a28-b4d4-4a9c-9d20-91437e46bbfb"/>
+    <PID name="Single_tank" mc="Standard.Project" uid="3fca2c22-2802-418a-9e29-3fa954be0713"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[Single_tank]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
