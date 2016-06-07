@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "{Controller}.cont.maxlevel": 0.0,
+    "{Controller}.cont.minlevel": 0.0
+  },
+  "connections": {
+    "{WaterTank}.wt.level": [
+      "{Controller}.cont.level"
+    ],
+    "{Controller}.cont.valve": [
+      "{WaterTank}.wt.valvecontrol"
+    ]
+  },
+  "fmus": {
+    "{WaterTank}": "",
+    "{Controller}": ""
+  }
+}
