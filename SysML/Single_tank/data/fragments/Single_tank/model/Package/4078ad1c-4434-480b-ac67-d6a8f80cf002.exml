@@ -50,7 +50,7 @@
           <DEPENDENCIES>
             <LINK relation="InformationSource">
               <REFOBJ>
-                <ID name="vlave" mc="Standard.Port" uid="165070c6-6e17-48bf-b071-ac702e0e0dcf"/>
+                <ID name="valve" mc="Standard.Port" uid="165070c6-6e17-48bf-b071-ac702e0e0dcf"/>
               </REFOBJ>
             </LINK>
             <LINK relation="InformationTarget">
@@ -123,7 +123,7 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="vlave" mc="Standard.Port" uid="165070c6-6e17-48bf-b071-ac702e0e0dcf"/>
+                      <ID name="valve" mc="Standard.Port" uid="165070c6-6e17-48bf-b071-ac702e0e0dcf"/>
                       <ATTRIBUTES>
                         <ATT name="IsBehavior">false</ATT>
                         <ATT name="IsService">true</ATT>
@@ -133,7 +133,7 @@
                         <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
                         <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
                         <ATT name="Value"></ATT>
-                        <ATT name="Name"><![CDATA[vlave]]></ATT>
+                        <ATT name="Name"><![CDATA[valve]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
