@@ -20,7 +20,7 @@
           <ID name="maxlevel" mc="Standard.Attribute" uid="e639ae17-92dd-4d02-b971-0482a96fbb6b"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
+            <ATT name="Value"><![CDATA[2.0]]></ATT>
             <ATT name="TargetIsClass">false</ATT>
             <ATT name="Changeable">ReadWrite</ATT>
             <ATT name="IsDerived">false</ATT>
@@ -87,7 +87,7 @@
           <ID name="minlevel" mc="Standard.Attribute" uid="270dd3d3-e14a-4642-93ee-798380df50d6"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
+            <ATT name="Value"><![CDATA[1.0]]></ATT>
             <ATT name="TargetIsClass">false</ATT>
             <ATT name="Changeable">ReadWrite</ATT>
             <ATT name="IsDerived">false</ATT>
