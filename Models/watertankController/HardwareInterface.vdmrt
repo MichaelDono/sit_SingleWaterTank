@@ -14,12 +14,9 @@ instance variables
 
 
 instance variables
-	-- @ interface: type = output, name="valveState";
+	-- @ interface: type = output, name="valve";
 	public valveState : bool := false;
 
 
-  -- @ interface: type = input, name="ACCactive";
-public  ACCactive : bool := false;
-  
 end HardwareInterface
 
