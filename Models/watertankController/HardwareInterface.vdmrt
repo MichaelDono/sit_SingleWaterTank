@@ -3,19 +3,19 @@ class HardwareInterface
 
 values
 	-- @ interface: type = parameter, name="minlevel";
-	public minlevel : real = 1.0;
+	public minlevel : RealPort = new RealPort(1.0);
 	-- @ interface: type = parameter, name="maxlevel";
-	public maxlevel : real = 2.0;
+	public maxlevel : RealPort = new RealPort(2.0);
 
 
 instance variables
 	-- @ interface: type = input, name="level";
-	public level : real := 0.0;
+	public level : RealPort := new RealPort(0.0);
 
 
 instance variables
 	-- @ interface: type = output, name="valve";
-	public valveState : bool := false;
+	public valveState : BoolPort := new BoolPort(false);
 
 
 end HardwareInterface

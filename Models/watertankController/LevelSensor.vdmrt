@@ -3,14 +3,14 @@ class LevelSensor
 
 instance variables
 
-handle : bool->real;
+port : RealPort;
 
 operations
 
-public LevelSensor: bool->real ==> LevelSensor
-LevelSensor(h) == handle := h;
+public LevelSensor: RealPort ==> LevelSensor
+LevelSensor(p) == port := p;
 
 public getLevel: () ==> real
-getLevel()==return handle(true);
+getLevel()== return port.getValue();
 
 end LevelSensor

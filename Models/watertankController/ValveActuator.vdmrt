@@ -3,14 +3,14 @@ class ValveActuator
 
 instance variables
 
-handle : bool->bool;
+port : BoolPort;
 
 operations
 
-public ValveActuator: bool->bool ==> ValveActuator
-ValveActuator(h) == handle := h;
+public ValveActuator: Port ==> ValveActuator
+ValveActuator(p) == port := p;
 
 public setValve: bool ==> ()
-setValve(value)==let - = handle(value) in skip;
+setValve(value)== port.setValue(value);
 
 end ValveActuator

@@ -6,41 +6,37 @@
 class Controller
 
 
-  
 instance variables
 
   levelSensor   : LevelSensor;
   valveActuator : ValveActuator;
 
-operations
-
-public Controller : LevelSensor * ValveActuator  ==> Controller
-Controller(l,v)==
- (levelSensor   := l;
-  valveActuator := v;
-  );
-  
 values
 open : bool = true;
 close: bool = false;
 
 operations
 
+public Controller : LevelSensor * ValveActuator  ==> Controller
+Controller(l,v)==
+(
+  levelSensor   := l;
+  valveActuator := v;
+ );
+
 private loop : () ==>()
 loop()==
 	cycles(2)
    (-- retrieve the first value from Co-SIM
    
-   
-   
-    let level : real = levelSensor.getLevel()
-    in
-    (
+   let level : real = levelSensor.getLevel()
+   in
+   (
     
-    if( level >= HardwareInterface`maxlevel)
+    if( level >= HardwareInterface`maxlevel.getValue())
     then valveActuator.setValve(open);
     
-    if( level <= HardwareInterface`minlevel)
+    if( level <= HardwareInterface`minlevel.getValue())
     then valveActuator.setValve(close);
     );
 			
