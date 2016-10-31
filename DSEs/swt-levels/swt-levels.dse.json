@@ -1,0 +1,61 @@
+{
+    "algorithm": {},
+    "objectiveConstraints": {},
+    "objectiveDefinitions": {
+        "externalScripts": {
+            "cumulativeDeviation": {
+                "scriptFile": "cumulativeDeviation.py",
+                "scriptParameters": {
+                    "1": "{WaterTank}.wt.level",
+                    "2": "1.0"
+                }
+            },
+            "vCount": {
+                "scriptFile": "valveChanges.py",
+                "scriptParameters": {
+                    "1": "{Controller}.cont.valve"
+                }
+            }
+        },
+        "internalFunctions": {}
+    },
+    "parameterConstraints": [
+    	"{Controller}.cont.maxlevel > {Controller}.cont.minlevel"
+    ],
+    "parameters": {
+        "{Controller}.cont.maxlevel": [
+            0.2,
+            0.4,
+            0.6,
+            0.8,
+            1.0,
+            1.2,
+            1.4,
+            1.6,
+            1.8,
+            2.0
+        ],
+        "{Controller}.cont.minlevel": [
+            0.2,
+            0.4,
+            0.6,
+            0.8,
+            1.0,
+            1.2,
+            1.4,
+            1.6,
+            1.8,
+            2.0
+        ]
+    },
+    "ranking": {
+        "pareto": {
+            "cumulativeDeviation": "-",
+            "vCount": "-"
+        }
+    },
+    "simulation": {
+        "endTime": "100",
+        "startTime": "0"
+    }
+}
