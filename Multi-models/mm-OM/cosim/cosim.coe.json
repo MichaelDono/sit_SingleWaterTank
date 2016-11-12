@@ -1,0 +1,2 @@
+{"multimodel_path":
+  "Multi-models/mm-OM/mm-OM.mm.json","startTime":0,"endTime":30,"livestream":{"{Controller}.cont":["valve"],"{WaterTank}.wt":["level"]},"algorithm":{"type":"fixed-step","size":0.1}}

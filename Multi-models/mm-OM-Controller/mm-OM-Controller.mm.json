@@ -1,0 +1,7 @@
+{"fmus":{
+  "{WaterTank}":"singlewatertank-20sim.fmu",
+  "{Controller}":"WaterTank_Control.fmu"},
+  "connections":{
+    "{Controller}.cont.valve":["{WaterTank}.wt.valvecontrol"],
+    "{WaterTank}.wt.level":["{Controller}.cont.level"]},
+	"parameters":{"{Controller}.cont.maxlevel":2,"{Controller}.cont.minlevel":1}}
