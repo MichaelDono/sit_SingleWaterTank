@@ -1,6 +1,6 @@
 {
     "algorithm": {},
-    "objectiveConstraints": {},
+    "objectiveConstraints": [],
     "objectiveDefinitions": {
         "externalScripts": {
             "cumulativeDeviation": {
@@ -48,6 +48,7 @@
             2.0
         ]
     },
+    "scenarios":[],
     "ranking": {
         "pareto": {
             "cumulativeDeviation": "-",
