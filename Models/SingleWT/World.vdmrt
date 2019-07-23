@@ -9,7 +9,7 @@ operations
 
 public run : () ==> ()
 run() ==
- (start(System`controller);
+ (start(System`ARX);
   block();
  );
 

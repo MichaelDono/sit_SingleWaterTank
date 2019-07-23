@@ -10,7 +10,7 @@ instance variables
 
   public levelSensor : LevelSensor;
   public valveActuator : ValveActuator;
-  public static controller : [Controller] := nil;
+  public static ARX : [ARX] := nil;
 
 	cpu1 : CPU := new CPU(<FP>, 20);
 operations
@@ -21,9 +21,9 @@ System () ==
 	levelSensor := new LevelSensor(hwi.level);
 	valveActuator :=  new ValveActuator(hwi.valveState); 
 	
-	controller := new Controller(levelSensor, valveActuator);
+	ARX := new ARX(4,4,0);
 
-	cpu1.deploy(controller,"Controller");
+	cpu1.deploy(ARX,"ARX");
 );
 
 end System
