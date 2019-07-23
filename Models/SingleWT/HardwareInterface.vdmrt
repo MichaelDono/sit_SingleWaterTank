@@ -1,7 +1,23 @@
+--##	EXPORT	902b71b53cdea1027b4262106969d9bebd6c8835	watertankController.fmu	2019-23-07 13:48:28	tool-wrapper	{"name":"fmu-import-export","version":"0.2.18"}
+--##	IMPORT	8a428e49916bdc1f2e82717ff296ff6fe324ba36	Controller.modeldescription.xml	2019-23-07 13:46:12	FMI-ModelDescription	{"name":"fmu-import-export","version":"0.2.18"}
 --##	EXPORT	7a49cbae7c43bb36eff962a87a01cd851aa9a610	watertankController.fmu	2017-28-03 10:27:52	tool-wrapper	{"name":"fmu-import-export","version":"0.2.1-SNAPSHOT"}
 --##	EXPORT	ac621cfaf051a4958946021f7a838dad25cef21f	watertankController.fmu	2017-08-03 10:51:37	c-code	{"name":"fmu-import-export","version":"0.1.7-SNAPSHOT"}
 -- Generated class
-class HardwareInterface
+class HardwareInterfaceinstance variables
+	-- @ interface: type = input, name="lfLeftVal";
+	public lfLeftVal : RealPort := new RealPort(0.0);
+	-- @ interface: type = input, name="lfRightVal";
+	public lfRightVal : RealPort := new RealPort(0.0);
+
+
+instance variables
+	-- @ interface: type = output, name="servoRightVal";
+	public servoRightVal : RealPort := new RealPort(0.0);
+	-- @ interface: type = output, name="servoLeftVal";
+	public servoLeftVal : RealPort := new RealPort(0.0);
+
+
+
 
 values
 	-- @ interface: type = parameter, name="minlevel";

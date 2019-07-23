@@ -14,13 +14,19 @@ instance variables
 	u: seq of real := [0,0,0,0,0];
 	u_model: real := 0.65;
 	y_model: real := 1.38709;
+	valveActuator : ValveActuator;
+	
+values
+	open : bool = true;
+	close: bool = false;
 	
 operations
-	public ARX : nat * nat * nat ==> ARX
-	ARX(n,m, d) == (
+	public ARX : nat * nat * nat * ValveActuator ==> ARX
+	ARX(n, m, d, v) == (
  		na := n;
  		nb := m;
  		nk := d;
+ 		valveActuator := v;
  	);
  	
  	private loop : () ==> ()
@@ -38,12 +44,20 @@ operations
 			--IO`printf("2nd: %s\n", [ a(j) * (history(len history - (j - 1)) - y_model)]);
 			
 			);
+			
 		total := total + y_model;
 		IO`printf("y(t): %s\n", [total]);
+		
 		-- shift everything back one
 		history := tl history ^ [total];
-		if (total >= 2) then u := u ^ [1];
-		if (total < 1) then u := u ^ [0];
+		if (total >= 2) then (
+			u := u ^ [1];
+			valveActuator.setValve(open);
+		);
+		if (total < 1) then (
+			u := u ^ [0];
+			valveActuator.setValve(close);
+		);
  	);
 		
 thread
